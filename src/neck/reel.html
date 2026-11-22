@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:"Noto Sans CJK KR",sans-serif}
+#stage{position:relative;width:1080px;height:1920px;background:#1d5c38;overflow:hidden}
+.sc{position:absolute;inset:0;opacity:0;padding:420px 90px 0;color:#f6f1e6}
+.cream{background:#f6f1e6;color:#1b2a20}
+.y{color:#f2b33d}.gr{color:#1d5c38}
+.tag{display:inline-block;font-weight:800;font-size:40px;padding:14px 32px;border-radius:999px;background:#f2b33d;color:#1b2a20}
+.cream .tag{background:#1d5c38;color:#f6f1e6}
+h1{font-weight:900;letter-spacing:-3px;line-height:1.12}
+.up{opacity:0}
+.brand{position:absolute;left:90px;top:170px;font-weight:900;font-size:34px;letter-spacing:2px;color:#f6f1e6;opacity:.85;z-index:9}
+.dot{position:absolute;border-radius:50%;background:#f2b33d;opacity:.12}
+
+/* timeline (ms): s1 0-3200, s2 3000-6400, s3 6200-10400, s4 10200-13800, s5 13600-17400, s6 17200-20000 */
+@keyframes show{0%{opacity:0}6%{opacity:1}94%{opacity:1}100%{opacity:0}}
+@keyframes showEnd{0%{opacity:0}8%{opacity:1}100%{opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(60px)}to{opacity:1;transform:none}}
+@keyframes pop{0%{opacity:0;transform:scale(.4)}60%{opacity:1;transform:scale(1.08)}100%{opacity:1;transform:scale(1)}}
+@keyframes zoom{from{transform:scale(1)}to{transform:scale(1.18)}}
+@keyframes count{from{width:0}to{width:100%}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+
+#s1{animation:show 3200ms linear 0ms both}
+#s2{animation:show 3400ms linear 3000ms both}
+#s3{animation:show 4200ms linear 6200ms both}
+#s4{animation:show 3600ms linear 10200ms both}
+#s5{animation:show 3800ms linear 13600ms both}
+#s6{animation:showEnd 2800ms linear 17200ms both}
+</style></head><body>
+<div id="stage">
+<div class="brand">WEBOOM MARKET</div>
+
+<!-- 1: hook -->
+<section class="sc" id="s1">
+  <div class="dot" style="width:900px;height:900px;right:-320px;top:120px"></div>
+  <div class="up" style="font-size:72px;font-weight:800;line-height:1.3;animation:rise 500ms ease-out 200ms both">닭 한 마리에서<br>단 약</div>
+  <div class="up" style="font-size:560px;font-weight:900;letter-spacing:-24px;line-height:.95;color:#f2b33d;transform-origin:left center;animation:pop 700ms cubic-bezier(.2,.9,.3,1.2) 700ms both">30<span style="font-size:200px;letter-spacing:-4px">g</span></div>
+  <div class="up" style="font-size:64px;font-weight:700;margin-top:30px;animation:rise 500ms ease-out 1500ms both">밖에 안 나오는 특수부위</div>
+</section>
+
+<!-- 2: name -->
+<section class="sc cream" id="s2">
+  <span class="tag up" style="animation:rise 400ms ease-out 3100ms both">위붐마켓 특수부위</span>
+  <h1 class="up" style="font-size:150px;margin-top:80px;animation:rise 600ms ease-out 3400ms both">쫄깃함의<br>끝판왕,</h1>
+  <h1 class="up gr" style="font-size:230px;margin-top:20px;animation:pop 700ms cubic-bezier(.2,.9,.3,1.2) 4000ms both;transform-origin:left center">닭목살</h1>
+  <div class="up" style="margin-top:80px;background:#1d5c38;color:#f6f1e6;border-radius:36px;padding:50px 56px;animation:rise 500ms ease-out 4800ms both">
+    <div style="font-size:40px;opacity:.75">1kg을 모으려면</div>
+    <div style="font-size:80px;font-weight:900">닭 약 <span class="y">30마리 이상</span></div>
+  </div>
+</section>
+
+<!-- 3: photo -->
+<section class="sc" id="s3">
+  <span class="tag up" style="animation:rise 400ms ease-out 6300ms both">실제 위붐마켓 닭목살</span>
+  <div class="up" style="margin:70px auto 0;width:900px;height:900px;border-radius:50%;overflow:hidden;border:18px solid #f6f1e6;box-shadow:0 40px 80px rgba(0,0,0,.35);animation:pop 700ms ease-out 6500ms both">
+    <img src="assets/neck.png" style="width:100%;height:100%;object-fit:cover;animation:zoom 4000ms linear 6400ms both">
+  </div>
+  <h1 class="up" style="font-size:96px;margin-top:70px;animation:rise 500ms ease-out 7300ms both">씹을수록 고소한<br><span class="y">쫀득·쫄깃</span> 식감</h1>
+</section>
+
+<!-- 4: how to -->
+<section class="sc cream" id="s4">
+  <span class="tag up" style="animation:rise 400ms ease-out 10300ms both">이렇게 드세요</span>
+  <h1 class="up" style="font-size:110px;margin:60px 0 50px;animation:rise 500ms ease-out 10500ms both">맛있게 먹는<br>3가지 방법</h1>
+  <div class="up" style="font-size:84px;font-weight:900;padding:36px 0;border-top:4px solid rgba(29,92,56,.2);animation:rise 400ms ease-out 11000ms both"><span class="gr">01</span>&nbsp; 소금구이</div>
+  <div class="up" style="font-size:84px;font-weight:900;padding:36px 0;border-top:4px solid rgba(29,92,56,.2);animation:rise 400ms ease-out 11600ms both"><span class="gr">02</span>&nbsp; 에어프라이어</div>
+  <div class="up" style="font-size:84px;font-weight:900;padding:36px 0;border-top:4px solid rgba(29,92,56,.2);border-bottom:4px solid rgba(29,92,56,.2);animation:rise 400ms ease-out 12200ms both"><span class="gr">03</span>&nbsp; 매콤 볶음</div>
+</section>
+
+<!-- 5: price -->
+<section class="sc" id="s5">
+  <div class="dot" style="width:900px;height:900px;left:-360px;bottom:120px"></div>
+  <span class="tag up" style="animation:rise 400ms ease-out 13700ms both">통큰 사은행사</span>
+  <div class="up" style="margin-top:70px;background:#f6f1e6;color:#1b2a20;border-radius:44px;padding:64px 64px;animation:rise 500ms ease-out 14000ms both">
+    <div style="font-size:48px;font-weight:700;opacity:.7">닭목살 10kg 구매 시</div>
+    <div class="up" style="font-size:210px;font-weight:900;letter-spacing:-8px;color:#1d5c38;line-height:1.05;transform-origin:left center;animation:pop 700ms cubic-bezier(.2,.9,.3,1.2) 14500ms both">5,900<span style="font-size:76px;letter-spacing:0">원/kg</span></div>
+    <div style="font-size:56px;font-weight:800;margin-top:10px">100g당 <span class="gr" style="font-weight:900">590원</span></div>
+  </div>
+  <div class="up" style="margin-top:50px;font-size:58px;font-weight:800;line-height:1.4;animation:rise 500ms ease-out 15300ms both">1kg씩 소포장<br><span class="y">필요한 만큼만</span> 꺼내 쓰기 편해요</div>
+  <div class="up" style="margin-top:30px;font-size:34px;opacity:.65;animation:rise 400ms ease-out 15600ms both">* 행사 내용은 쇼핑몰 기준이며 조기 종료될 수 있어요</div>
+</section>
+
+<!-- 6: CTA -->
+<section class="sc" id="s6" style="background:#1d5c38">
+  <h1 class="up" style="font-size:120px;margin-top:120px;animation:rise 500ms ease-out 17300ms both">지금 바로<br><span class="y">닭목살</span> 만나보세요</h1>
+  <div class="up" style="margin-top:110px;display:inline-block;background:#f2b33d;color:#1b2a20;font-weight:900;font-size:96px;padding:46px 84px;border-radius:32px;animation:pop 600ms ease-out 17800ms both, pulse 900ms ease-in-out 18500ms 2">바로구매 ›</div>
+  <div class="up" style="margin-top:50px;font-size:56px;font-weight:800;animation:rise 400ms ease-out 18300ms both">프로필 링크 클릭!</div>
+</section>
+</div>
+<script>
+window.seek=t=>{document.getAnimations().forEach(a=>{a.pause();a.currentTime=t;});};
+</script>
+</body></html>
