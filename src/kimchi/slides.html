@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Sans CJK KR",sans-serif;background:#ccc}
+.s{width:1080px;height:1350px;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:96px 88px}
+.g{background:#1d5c38;color:#f6f1e6}.c{background:#f6f1e6;color:#1b2a20}
+.tag{display:inline-block;align-self:flex-start;font-weight:700;font-size:30px;padding:12px 26px;border-radius:999px}
+.g .tag{background:#f2b33d;color:#1b2a20}.c .tag{background:#1d5c38;color:#f6f1e6}
+.brand{position:absolute;left:88px;bottom:72px;font-weight:900;font-size:30px;letter-spacing:1px;opacity:.85}
+.page{position:absolute;right:88px;bottom:72px;font-size:28px;opacity:.6}
+h1{font-weight:900;line-height:1.12;letter-spacing:-2px}
+h2{font-weight:900;font-size:76px;line-height:1.18;letter-spacing:-1.5px}
+.y{color:#f2b33d}.gr{color:#1d5c38}.red{color:#c8321e}
+.photo{border-radius:36px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.3)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.chip{display:inline-block;font-size:38px;font-weight:800;padding:18px 30px;border-radius:20px;background:#fff;color:#1b2a20;border:3px solid #1d5c38}
+.no{display:flex;gap:28px;align-items:center;padding:30px 0;border-top:3px solid rgba(246,241,230,.2)}
+.no b{flex:0 0 120px;height:120px;border-radius:50%;background:#f2b33d;color:#1b2a20;font-size:60px;font-weight:900;display:flex;align-items:center;justify-content:center}
+.no h3{font-size:50px;font-weight:900}.no p{font-size:32px;opacity:.85;margin-top:4px}
+.item{display:flex;gap:28px;align-items:center;background:#fff;border-radius:28px;padding:20px;margin-bottom:22px}
+.item .ph{flex:0 0 240px;height:150px;border-radius:18px;overflow:hidden}.item .ph img{width:100%;height:100%;object-fit:cover}
+.item h3{font-size:44px;font-weight:900;color:#1d5c38}.item p{font-size:32px;font-weight:700;margin-top:4px}
+.btn{display:inline-block;background:#f2b33d;color:#1b2a20;font-weight:900;font-size:56px;padding:30px 60px;border-radius:24px}
+</style></head><body>
+
+<section class="s g" id="s1">
+  <span class="tag">위붐마켓 김치 행사</span>
+  <h1 style="font-size:104px;margin-top:56px">주문한 중량에<br><span class="y">1kg 더!</span></h1>
+  <p style="font-size:44px;font-weight:700;margin-top:30px;line-height:1.4">가격은 그대로, 배송비는 무료</p>
+  <div class="photo" style="margin-top:56px;height:560px"><img src="assets/pogi_hero.jpg"></div>
+  <div class="brand">WEBOOM MARKET</div><div class="page">1 / 5 →</div>
+</section>
+
+<section class="s c" id="s2">
+  <span class="tag">재료부터 믿을 수 있게</span>
+  <h2 style="margin-top:56px">모든 재료<br><span class="gr">100% 국내산</span></h2>
+  <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:50px">
+    <span class="chip">국내산 배추</span><span class="chip">태양초 고춧가루</span><span class="chip">국산 천일염</span>
+    <span class="chip">생강</span><span class="chip">찹쌀</span><span class="chip">젓갈</span>
+  </div>
+  <div class="photo" style="margin-top:60px;height:440px"><img src="assets/pogi_cabbage.jpg" style="object-position:center 40%"></div>
+  <div class="brand gr">WEBOOM MARKET</div><div class="page">2 / 5 →</div>
+</section>
+
+<section class="s g" id="s3">
+  <span class="tag">HACCP · 전통식품 인증</span>
+  <h2 style="margin-top:56px;margin-bottom:40px">몸에 좋지 않은 건<br><span class="y">3가지 無 원칙</span></h2>
+  <div class="no"><b>無</b><div><h3>수입원료</h3><p>100% 국내산지에서 엄선한 재료</p></div></div>
+  <div class="no"><b>無</b><div><h3>MSG</h3><p>천연재료 육수 · 저염절임</p></div></div>
+  <div class="no" style="border-bottom:3px solid rgba(246,241,230,.2)"><b>無</b><div><h3>재고</h3><p>매일 주문량만 생산해 더 신선하게</p></div></div>
+  <div class="brand">WEBOOM MARKET</div><div class="page">3 / 5 →</div>
+</section>
+
+<section class="s c" id="s4" style="padding-top:80px">
+  <span class="tag">행사 상품 (1kg 추가 증정)</span>
+  <h2 style="margin:36px 0 34px;font-size:68px">입맛대로 골라 담는<br>위붐마켓 김치</h2>
+  <div class="item"><div class="ph"><img src="assets/pogi_main.jpg"></div><div><h3>포기김치</h3><p>3+1kg 20,500 · 5+1kg 29,600<br>10+1kg 45,900원</p></div></div>
+  <div class="item"><div class="ph"><img src="assets/chonggak.jpg"></div><div><h3>총각김치</h3><p>3+1kg 22,000 · 5+1kg 31,500원</p></div></div>
+  <div class="item"><div class="ph"><img src="assets/seokbakji.jpg"></div><div><h3>석박지</h3><p>3+1kg 16,500 · 5+1kg 24,000원</p></div></div>
+  <div class="item"><div class="ph"><img src="assets/yeolmu.jpg"></div><div><h3>열무김치</h3><p>3+1kg 20,000 · 5+1kg 28,000원</p></div></div>
+  <div class="page">4 / 5 →</div>
+</section>
+
+<section class="s g" id="s5">
+  <span class="tag">무료배송 · 냉장배송</span>
+  <h2 style="margin-top:56px">김치 떨어지기 전에<br><span class="y">미리 채워 두세요</span></h2>
+  <div style="margin-top:50px;background:#f6f1e6;color:#1b2a20;border-radius:36px;padding:44px 52px">
+    <div style="font-size:36px;font-weight:700;opacity:.7">대표 상품 · 포기김치 5kg+1kg</div>
+    <div style="font-size:130px;font-weight:900;letter-spacing:-5px;color:#1d5c38;line-height:1.05">29,600<span style="font-size:52px;letter-spacing:0">원</span></div>
+    <div style="font-size:34px;margin-top:10px"><s style="opacity:.6">45,000원</s> <b class="red">34% 할인</b> · 총 6kg</div>
+    <div style="margin-top:22px;padding-top:22px;border-top:3px dashed rgba(29,92,56,.25);font-size:32px;font-weight:700;color:#1d5c38">아이스박스+아이스팩 냉장 배송 · 보관 0~4℃</div>
+  </div>
+  <p style="font-size:28px;opacity:.7;margin-top:18px">* 행사 내용은 쇼핑몰 기준이며 조기 종료될 수 있어요</p>
+  <div style="margin-top:36px"><div class="btn">바로구매 ›</div>
+  <div style="font-size:34px;margin-top:22px;font-weight:700">프로필 링크 클릭 → 김치 상품으로 바로 연결</div></div>
+  <div class="page">5 / 5</div>
+</section>
+</body></html>

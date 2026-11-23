@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:"Noto Sans CJK KR",sans-serif}
+#stage{position:relative;width:1080px;height:1920px;background:#1d5c38;overflow:hidden}
+.sc{position:absolute;inset:0;opacity:0;padding:400px 90px 0;color:#f6f1e6}
+.cream{background:#f6f1e6;color:#1b2a20}
+.y{color:#f2b33d}.gr{color:#1d5c38}
+.tag{display:inline-block;font-weight:800;font-size:40px;padding:14px 32px;border-radius:999px;background:#f2b33d;color:#1b2a20}
+.cream .tag{background:#1d5c38;color:#f6f1e6}
+h1{font-weight:900;letter-spacing:-3px;line-height:1.12}
+.up{opacity:0}
+.brand{position:absolute;left:90px;top:170px;font-weight:900;font-size:34px;letter-spacing:2px;color:#f6f1e6;opacity:.85;z-index:9;mix-blend-mode:difference}
+.ph{border-radius:40px;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,.35)}.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.chip{display:inline-block;font-size:52px;font-weight:800;padding:22px 36px;border-radius:24px;background:#fff;color:#1b2a20;border:4px solid #1d5c38;margin:0 14px 18px 0}
+.no{display:flex;gap:32px;align-items:center;padding:34px 0;border-top:4px solid rgba(246,241,230,.2)}
+.no b{flex:0 0 140px;height:140px;border-radius:50%;background:#f2b33d;color:#1b2a20;font-size:72px;font-weight:900;display:flex;align-items:center;justify-content:center}
+.no h3{font-size:72px;font-weight:900}
+.it{display:flex;gap:30px;align-items:center;background:#fff;border-radius:30px;padding:22px;margin-bottom:24px}
+.it .p{flex:0 0 300px;height:180px;border-radius:20px;overflow:hidden}.it .p img{width:100%;height:100%;object-fit:cover}
+.it h3{font-size:60px;font-weight:900;color:#1d5c38}.it p{font-size:40px;font-weight:700}
+@keyframes show{0%{opacity:0}6%{opacity:1}94%{opacity:1}100%{opacity:0}}
+@keyframes showEnd{0%{opacity:0}8%{opacity:1}100%{opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(60px)}to{opacity:1;transform:none}}
+@keyframes pop{0%{opacity:0;transform:scale(.4)}60%{opacity:1;transform:scale(1.08)}100%{opacity:1;transform:scale(1)}}
+@keyframes zoom{from{transform:scale(1)}to{transform:scale(1.15)}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+#s1{animation:show 3400ms linear 0ms both}
+#s2{animation:show 3600ms linear 3200ms both}
+#s3{animation:show 3600ms linear 6600ms both}
+#s4{animation:show 4200ms linear 10000ms both}
+#s5{animation:show 3400ms linear 14000ms both}
+#s6{animation:showEnd 2800ms linear 17200ms both}
+</style></head><body>
+<div id="stage">
+<div class="brand">WEBOOM MARKET</div>
+
+<section class="sc" id="s1">
+  <span class="tag up" style="animation:rise 400ms ease-out 100ms both">위붐마켓 김치 행사</span>
+  <h1 class="up" style="font-size:130px;margin-top:60px;animation:rise 500ms ease-out 300ms both">주문한 중량에</h1>
+  <h1 class="up y" style="font-size:230px;transform-origin:left center;animation:pop 700ms cubic-bezier(.2,.9,.3,1.2) 800ms both">1kg 더!</h1>
+  <div class="ph up" style="height:620px;margin-top:50px;animation:rise 600ms ease-out 1400ms both"><img src="assets/pogi_hero.jpg" style="animation:zoom 3400ms linear 0ms both"></div>
+</section>
+
+<section class="sc cream" id="s2">
+  <span class="tag up" style="animation:rise 400ms ease-out 3300ms both">재료부터 믿을 수 있게</span>
+  <h1 class="up" style="font-size:120px;margin:60px 0 50px;animation:rise 500ms ease-out 3500ms both">모든 재료<br><span class="gr">100% 국내산</span></h1>
+  <div class="up" style="animation:rise 500ms ease-out 4000ms both"><span class="chip">국내산 배추</span><span class="chip">태양초 고춧가루</span><span class="chip">국산 천일염</span></div>
+  <div class="ph up" style="height:520px;margin-top:30px;animation:rise 500ms ease-out 4600ms both"><img src="assets/pogi_cabbage.jpg"></div>
+</section>
+
+<section class="sc" id="s3">
+  <span class="tag up" style="animation:rise 400ms ease-out 6700ms both">HACCP · 전통식품 인증</span>
+  <h1 class="up" style="font-size:110px;margin:60px 0 40px;animation:rise 500ms ease-out 6900ms both">3가지 <span class="y">無 원칙</span></h1>
+  <div class="no up" style="animation:rise 400ms ease-out 7400ms both"><b>無</b><h3>수입원료</h3></div>
+  <div class="no up" style="animation:rise 400ms ease-out 7900ms both"><b>無</b><h3>MSG</h3></div>
+  <div class="no up" style="border-bottom:4px solid rgba(246,241,230,.2);animation:rise 400ms ease-out 8400ms both"><b>無</b><h3>재고</h3></div>
+  <p class="up" style="font-size:44px;font-weight:700;margin-top:40px;animation:rise 400ms ease-out 8900ms both">매일 주문량만 생산해 더 신선하게</p>
+</section>
+
+<section class="sc cream" id="s4" style="padding-top:340px">
+  <span class="tag up" style="animation:rise 400ms ease-out 10100ms both">행사 상품 · 1kg 추가 증정</span>
+  <div style="height:50px"></div>
+  <div class="it up" style="animation:rise 400ms ease-out 10400ms both"><div class="p"><img src="assets/pogi_main.jpg"></div><div><h3>포기김치</h3><p>3+1kg 20,500원~</p></div></div>
+  <div class="it up" style="animation:rise 400ms ease-out 10900ms both"><div class="p"><img src="assets/chonggak.jpg"></div><div><h3>총각김치</h3><p>3+1kg 22,000원~</p></div></div>
+  <div class="it up" style="animation:rise 400ms ease-out 11400ms both"><div class="p"><img src="assets/seokbakji.jpg"></div><div><h3>석박지</h3><p>3+1kg 16,500원~</p></div></div>
+  <div class="it up" style="animation:rise 400ms ease-out 11900ms both"><div class="p"><img src="assets/yeolmu.jpg"></div><div><h3>열무김치</h3><p>3+1kg 20,000원~</p></div></div>
+</section>
+
+<section class="sc" id="s5">
+  <span class="tag up" style="animation:rise 400ms ease-out 14100ms both">대표 상품</span>
+  <div class="up" style="margin-top:60px;background:#f6f1e6;color:#1b2a20;border-radius:44px;padding:60px;animation:rise 500ms ease-out 14300ms both">
+    <div style="font-size:48px;font-weight:700;opacity:.7">포기김치 5kg + 1kg (총 6kg)</div>
+    <div class="up" style="font-size:210px;font-weight:900;letter-spacing:-8px;color:#1d5c38;line-height:1.05;transform-origin:left center;animation:pop 700ms cubic-bezier(.2,.9,.3,1.2) 14800ms both">29,600<span style="font-size:80px;letter-spacing:0">원</span></div>
+    <div style="font-size:52px;font-weight:800;margin-top:10px"><s style="opacity:.55">45,000원</s> <span style="color:#c8321e">34% 할인</span></div>
+  </div>
+  <div class="up" style="margin-top:50px;font-size:56px;font-weight:800;line-height:1.4;animation:rise 500ms ease-out 15500ms both">무료배송 · <span class="y">아이스박스 냉장배송</span></div>
+  <div class="up" style="margin-top:26px;font-size:34px;opacity:.65;animation:rise 400ms ease-out 15800ms both">* 행사 내용은 쇼핑몰 기준이며 조기 종료될 수 있어요</div>
+</section>
+
+<section class="sc" id="s6" style="background:#1d5c38">
+  <h1 class="up" style="font-size:100px;margin-top:120px;animation:rise 500ms ease-out 17300ms both">김치 떨어지기 전에<br><span class="y">미리 채워 두세요</span></h1>
+  <div class="up" style="margin-top:110px;display:inline-block;background:#f2b33d;color:#1b2a20;font-weight:900;font-size:96px;padding:46px 84px;border-radius:32px;animation:pop 600ms ease-out 17800ms both, pulse 900ms ease-in-out 18500ms 2">바로구매 ›</div>
+  <div class="up" style="margin-top:50px;font-size:56px;font-weight:800;animation:rise 400ms ease-out 18300ms both">프로필 링크 클릭!</div>
+</section>
+</div>
+<script>window.seek=t=>{document.getAnimations().forEach(a=>{a.pause();a.currentTime=t;});};</script>
+</body></html>
